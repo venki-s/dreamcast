@@ -1,2 +1,6 @@
 # Node modules
 platform/node_modules/*
+
+# Ignoring DS_store
+.DS_store
+**/.DS_store
