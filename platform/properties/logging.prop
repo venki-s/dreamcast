@@ -1,0 +1,2 @@
+dev.log.config = [:date[clf]] ":method :url HTTP/:http-version" :status :response-time ms
+prod.log.config = tiny
