@@ -1,5 +1,6 @@
 # Node modules
 platform/node_modules/*
+ui/node_modules/*
 
 # Ignoring DS_store
 .DS_store
