@@ -1,5 +1,7 @@
 <<<<<<< HEAD
+
 # fplan
+
 =======
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -69,4 +71,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
->>>>>>> Initialize project using Create React App
+
+> > > > > > > Initialize project using Create React App
+
+To start the application
+
+1. cd platform
+2. node server-start
+3. cd ..
+4. cd ui
+5. npm start

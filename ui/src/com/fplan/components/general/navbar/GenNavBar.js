@@ -53,7 +53,7 @@ export default function GenNavBar(props) {
                   style={{ textAlign: "left" }}
                 >
                   <Link href="/" style={{ color: "#2a6bf4" }}>
-                    My Portfolio
+                    Dream Cast
                   </Link>
                 </Typography>
               </div>
