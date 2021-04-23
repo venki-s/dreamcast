@@ -3,11 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import HomeIcon from "../../ui/HomeIcon";
 import "../../../../../../src/index.css";
 import Link from "@material-ui/core/Link";
 import Sign from "../../ui/Sign";
 import Grid from "@material-ui/core/Grid";
+import HomeImage from "../../ui/HomeImage";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,6 +19,11 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     fontFamily: "Lobster",
+  },
+  headings: {
+    fontSize: "1.2rem",
+    width: "7%",
+    fontFamily: "Proza Libre",
   },
 }));
 
@@ -52,28 +57,43 @@ export default function GenNavBar(props) {
                   className={classes.title}
                   style={{ textAlign: "left" }}
                 >
-                  <Link href="/" style={{ color: "#2a6bf4" }}>
+                  <Link href="/" style={{ color: "#FF3300" }}>
                     Dream Cast
                   </Link>
                 </Typography>
               </div>
               <div
                 style={{
-                  width: "auto",
+                  height: "auto",
+                  width: "50px",
                 }}
               >
-                <HomeIcon style={{ color: "#2a6bf4" }}></HomeIcon>
+                <HomeImage />
               </div>
 
-              <div style={{ width: "52%" }}></div>
-              <div style={{ width: "7%" }}>
-                <Link href="/" style={{ color: "#2a6bf4", fontSize: "1rem" }}>
-                  Learn More
+              <div style={{ width: "35%" }}></div>
+              <div className={classes.headings}>
+                <Link
+                  href="/"
+                  style={{ color: "#ED5138" }}
+                  className={classes.headings}
+                >
+                  Home
                 </Link>
               </div>
-              <div style={{ width: "7%" }}>
-                <Link href="/" style={{ color: "#2a6bf4", fontSize: "1rem" }}>
-                  Contact Us
+              <div className={classes.headings}>
+                <Link href="/" style={{ color: "#ED5138" }}>
+                  Search Talent
+                </Link>
+              </div>
+              <div className={classes.headings}>
+                <Link href="/" style={{ color: "#ED5138" }}>
+                  Studios
+                </Link>
+              </div>
+              <div style={{ width: "10%" }} className={classes.headings}>
+                <Link href="/" style={{ color: "#ED5138" }}>
+                  Make your movie
                 </Link>
               </div>
               <div style={{ width: "7%" }}>
