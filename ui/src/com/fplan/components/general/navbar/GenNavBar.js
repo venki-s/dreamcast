@@ -19,11 +19,15 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     fontFamily: "Lobster",
+    fontSize: "2.5rem",
   },
   headings: {
-    fontSize: "1.2rem",
-    width: "7%",
+    fontSize: "1rem",
+    display: "inline-block",
     fontFamily: "Proza Libre",
+    marginLeft: "1px",
+    marginRight: "1px",
+    //border: "1px solid red",
   },
 }));
 
@@ -57,7 +61,7 @@ export default function GenNavBar(props) {
                   className={classes.title}
                   style={{ textAlign: "left" }}
                 >
-                  <Link href="/" style={{ color: "#FF3300" }}>
+                  <Link href="/" style={{ color: "#ED5138" }}>
                     Dream Cast
                   </Link>
                 </Typography>
@@ -71,32 +75,38 @@ export default function GenNavBar(props) {
                 <HomeImage />
               </div>
 
-              <div style={{ width: "35%" }}></div>
-              <div className={classes.headings}>
-                <Link
-                  href="/"
-                  style={{ color: "#ED5138" }}
-                  className={classes.headings}
-                >
+              <div style={{ width: "19%" }}></div>
+              <div className={classes.headings} style={{ width: "5%" }}>
+                <Link href="/" style={{ color: "#FF5722" }}>
                   Home
                 </Link>
               </div>
-              <div className={classes.headings}>
-                <Link href="/" style={{ color: "#ED5138" }}>
+              <div className={classes.headings} style={{ width: "8%" }}>
+                <Link href="/" style={{ color: "#FF5722" }}>
                   Search Talent
                 </Link>
               </div>
-              <div className={classes.headings}>
-                <Link href="/" style={{ color: "#ED5138" }}>
+              <div className={classes.headings} style={{ width: "8%" }}>
+                <Link href="/" style={{ color: "#FF5722" }}>
+                  Short Movies
+                </Link>
+              </div>
+              <div className={classes.headings} style={{ width: "5%" }}>
+                <Link href="/" style={{ color: "#FF5722" }}>
                   Studios
                 </Link>
               </div>
               <div style={{ width: "10%" }} className={classes.headings}>
-                <Link href="/" style={{ color: "#ED5138" }}>
+                <Link href="/" style={{ color: "#FF5722" }}>
                   Make your movie
                 </Link>
               </div>
-              <div style={{ width: "7%" }}>
+              <div style={{ width: "8%" }} className={classes.headings}>
+                <Link href="/" style={{ color: "#FF5722" }}>
+                  Casting Calls
+                </Link>
+              </div>
+              <div style={{ width: "5%" }}>
                 <Sign signInNav={props.signInNav} action={"signin"}></Sign>
               </div>
               <div style={{ width: "auto" }}>

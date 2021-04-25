@@ -19,8 +19,9 @@ export default function Sign(props) {
       <div>
         <Link
           style={{
-            color: "#ED5138",
-            fontSize: "1.2rem",
+            //color: "#3500D3",
+            color: "#FF5722",
+            fontSize: "1rem",
             fontFamily: "Proza Libre",
           }}
           href="/signin"
@@ -39,7 +40,7 @@ export default function Sign(props) {
           variant="contained"
           color="primary"
           href="#contained-buttons"
-          style={{ backgroundColor: "#ED5138", textTransform: "none" }}
+          style={{ backgroundColor: "#FF5722", textTransform: "none" }}
           onClick={props.signUpNav}
         >
           Create a Free Account

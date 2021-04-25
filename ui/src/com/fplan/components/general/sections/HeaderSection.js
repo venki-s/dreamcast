@@ -33,21 +33,31 @@ export default function HeaderSection(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} sytle={{ border: "1px solid red" }}>
       <Grid container spacing={1}>
-        <Grid item xs={12}>
+        {/*
+        <Grid item xs={6} sytle={{ border: "1px solid red" }}>
           <Paper
             style={{
-              height: "12rem",
+              height: "20rem",
               background: "transparent",
               boxShadow: "none",
+              border: "1px solid red",
             }}
           ></Paper>
+        </Grid>
+          */}
+        <Grid item xs={12} sytle={{ border: "1px solid red" }}>
+          <ContentImage image={"reel"}></ContentImage>
         </Grid>
         <Grid
           item
           xs={6}
-          style={{ textAlign: "left", padding: "0px 0px 0px 7rem" }}
+          style={{
+            textAlign: "left",
+            padding: "0px 0px 0px 7rem",
+            border: "1px solid red",
+          }}
         >
           <h2 className={classes.content}>Personal Financial Manager</h2>
           <h4 className={classes.subcontent}>
