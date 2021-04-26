@@ -1,11 +1,12 @@
 import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
+//import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import "../../../../../index.css";
 
 import ContentImage from "../../images/content/ContentImages";
+import CarouselSlide from "./MainCarouselSlide";
 import Sign from "../../ui/Sign";
 
 const useStyles = makeStyles((theme) => ({
@@ -35,7 +36,7 @@ export default function HeaderSection(props) {
   return (
     <div className={classes.root} sytle={{ border: "1px solid red" }}>
       <Grid container spacing={1}>
-        {/*
+        {/* 
         <Grid item xs={6} sytle={{ border: "1px solid red" }}>
           <Paper
             style={{
@@ -46,9 +47,11 @@ export default function HeaderSection(props) {
             }}
           ></Paper>
         </Grid>
-          */}
+
+        */}
+
         <Grid item xs={12} sytle={{ border: "1px solid red" }}>
-          <ContentImage image={"reel"}></ContentImage>
+          <CarouselSlide></CarouselSlide>
         </Grid>
         <Grid
           item
