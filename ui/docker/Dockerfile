@@ -1,4 +1,5 @@
-FROM node:17
+FROM node:16
+#EXPORT NODE_OPTIONS=--openssl-legacy-provider
 ##WORKDIR /src
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
