@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: castingzonesui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: castingzonesui
+  template:
+    metadata:
+      labels:
+        app: castingzonesui
+    spec:
+      containers:
+      - name: castingzonesui
+        image: venkis/castingzones
+        ports:
+        - containerPort: 3000
+        imagePullPolicy: Always
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
