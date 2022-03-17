@@ -24,19 +24,3 @@ kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get
 
 kubectl expose deployment castingzonesui --port=3000 --target-port=3000 --selector=castingzonesui
 
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: casting-service
-spec:
-  selector:
-    app: castingzonesui
-  ports:
-    - protocol: TCP
-      port: 3000
-      targetPort: 3000
-      nodePort:  30008
-
-       command: [ "node scripts/start.js", "-c", "--" ]
-        args: [ "while true; do sleep 30; done;" ]
