@@ -14,7 +14,7 @@ kubectl get pods
 
 kubectl apply -f docker/kube/
 
-docker build -f  docker/Dockerfile . -t venkis/castingzones
+docker build -f  docker/Dockerfile . -t venkis/tatsa
 
 deploy kubernetes dashboard
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.5.0/aio/deploy/recommended.yaml

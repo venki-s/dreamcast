@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import TextField from "@material-ui/core/TextField";
+import TextField from '@mui/material/TextField';
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Link from "@material-ui/core/Link";
@@ -74,39 +74,37 @@ export default function SignUp(props) {
         >
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
-              <TextField
-                autoComplete="fname"
-                name="firstName"
-                variant="outlined"
-                required
-                fullWidth
-                id="firstName"
-                label="First Name"
-                autoFocus
-                onChange={(event) => setFname(event.target.value)}
-              />
+            <TextField 
+            id="firstName" 
+            label="First Name" 
+            variant="outlined" 
+            required
+            fullWidth
+            autoComplete="fname"
+            onChange={(event) => setFname(event.target.value)}
+            />
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                id="lastName"
-                label="Last Name"
-                name="lastName"
-                autoComplete="lname"
-                onChange={(event) => setLname(event.target.value)}
-              />
+            <TextField 
+            id="lastName" 
+            label="Last Name" 
+            variant="outlined" 
+            name="lastName"
+            autoComplete="lname"
+            required
+            fullWidth
+            onChange={(event) => setLname(event.target.value)}
+            />
             </Grid>
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
                 required
-                fullWidth
                 id="email"
                 label="Email Address"
                 name="email"
                 autoComplete="email"
+                fullWidth
                 onChange={(event) => setEmail(event.target.value)}
               />
             </Grid>
@@ -114,12 +112,12 @@ export default function SignUp(props) {
               <TextField
                 variant="outlined"
                 required
-                fullWidth
                 name="password"
                 label="Password"
                 type="password"
                 id="password"
-                autoComplete="current-password"
+                autoComplete="password"
+                fullWidth
                 onChange={(event) => setPassword(event.target.value)}
               />
             </Grid>

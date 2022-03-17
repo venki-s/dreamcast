@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: castingzonesbe
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: castingzonesbe
+  template:
+    metadata:
+      labels:
+        app: castingzonesbe
+    spec:
+      containers:
+      - name: castingzonesbe
+        image: venkis/bhargo:latest
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]

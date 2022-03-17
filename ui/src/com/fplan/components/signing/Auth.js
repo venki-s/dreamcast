@@ -4,7 +4,7 @@ import Signin from "./SignIn";
 import SignUp from "./SignUp";
 import Snackbar from "@material-ui/core/Snackbar";
 
-const AUTH_URL = "http://localhost:3001/api/users";
+const AUTH_URL = "http://localhost:8080/api/talent/";
 
 class Auth extends Component {
   auth = (fname, lname, email, password, isSignup) => {
@@ -49,6 +49,7 @@ class Auth extends Component {
         this.props.history.push("/signupsuccess");
       })
       .catch((err) => {
+        console.log("error  ", err);
         console.log("error status ", err.response.status);
         console.log("error message ", err.response.data);
       });
